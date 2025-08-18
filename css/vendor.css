@@ -870,3 +870,21 @@ button.swiper-pagination-bullet {
     transform : scale(1);
     opacity   : 1;
 }
+.modal-popup__detailss{
+    display: block;
+  width: 100%;
+}
+.text-huge-title {
+  text-align: justify;
+}
+.attention-getter{
+      text-align: justify;
+
+}
+.timeline__desc{
+    text-align: justify;
+
+}
+.justify{
+    text-align: justify;
+}
