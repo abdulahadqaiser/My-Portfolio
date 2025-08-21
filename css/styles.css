@@ -3903,14 +3903,19 @@ img.u-pull-left {
         background : transparent !important;
         align-items : initial !important;
         justify-content : initial !important;
+        border-bottom : 1px solid var(--color-border);
+        padding-bottom : var(--vspace-0_5);
     }
 
     .folio-list__item-pic img {
         max-width : 100% !important;
         width     : 100% !important;
         height    : auto !important;
-        object-fit : cover !important;
+        min-height : 120px !important;
+        object-fit : contain !important;
         border-radius : 8px;
+        background : rgba(255, 255, 255, 0.05);
+        padding : var(--vspace-0_5);
     }
 
     .folio-list__item-text {
