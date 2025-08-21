@@ -3905,13 +3905,41 @@ img.u-pull-left {
         justify-content : initial !important;
     }
 
+    /* Special handling for Alterna project on mobile */
+    .folio-list__item:first-child .folio-list__item-pic {
+        width : 200px !important;
+        height : 200px !important;
+        display : flex !important;
+        align-items : center !important;
+        justify-content : center !important;
+        background : white !important;
+        border-radius : 8px !important;
+        margin : 0 auto var(--vspace-0_5) auto !important;
+    }
+
     .folio-list__item-pic img {
         max-width : 100% !important;
         width     : 100% !important;
         height    : auto !important;
+        min-height : 150px !important;
         object-fit : cover !important;
         border-radius : 8px;
         display : block;
+        background-color : var(--color-gray-9);
+        /* Force image loading */
+        opacity : 1;
+        visibility : visible;
+    }
+
+    /* Special styling for Alterna logo on mobile */
+    .folio-list__item:first-child .folio-list__item-pic img {
+        max-width : 90% !important;
+        max-height : 90% !important;
+        width : auto !important;
+        height : auto !important;
+        min-height : auto !important;
+        object-fit : contain !important;
+        background-color : transparent !important;
     }
 
     .folio-list__item {
