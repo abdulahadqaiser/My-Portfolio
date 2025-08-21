@@ -3882,11 +3882,11 @@ img.u-pull-left {
 @media screen and (max-width: 400px) {
     .folio-list .column {
         flex  : none;
-        width : 50%;
+        width : 100%;
     }
 
     .folio-list__item {
-        margin-bottom : 0;
+        margin-bottom : var(--vspace-0_75);
     }
 
     .folio-list__item-link {
@@ -3895,17 +3895,37 @@ img.u-pull-left {
 
     .folio-list__item-pic {
         position : static;
+        margin-bottom : var(--vspace-0_5);
+        /* Override inline styles for mobile */
+        width : 100% !important;
+        height : auto !important;
+        display : block !important;
+        background : transparent !important;
+        align-items : initial !important;
+        justify-content : initial !important;
     }
 
     .folio-list__item-pic img {
-        max-width : 100%;
-        width     : 100%;
-        height    : auto;
+        max-width : 100% !important;
+        width     : 100% !important;
+        height    : auto !important;
+        object-fit : cover !important;
+        border-radius : 8px;
     }
 
-    .folio-list__item-text,
+    .folio-list__item-text {
+        display : block;
+        border-top : none;
+        padding-top : 0;
+        min-height : auto;
+    }
+
     .folio-list__proj-link {
-        display : none;
+        position : relative;
+        top : auto;
+        right : auto;
+        margin-top : var(--vspace-0_25);
+        display : inline-block;
     }
 
     .modal-popup__desc {
